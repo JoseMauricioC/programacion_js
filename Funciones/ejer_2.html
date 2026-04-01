@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero1" placeholder="fila">
+    <input type="number" id="numero2" placeholder="columna">
+    <button onclick="asteriscos()">crear</button>
+
+    <script>
+        function asteriscos(){
+            let a = parseInt(document.getElementById("numero1").value)
+            let b = parseInt(document.getElementById("numero2").value)
+            for(let f=1; f<=a; f++){
+                for(let c=1; c<=b; c++){
+                    let r = document.write("*")
+                }
+                document.write("<br>")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Asteriscos</title>
+</head>
+<body>
+    <input type="number" id="numero1" placeholder="Filas">
+    <input type="number" id="numero2" placeholder="Columnas">
+    <button onclick="asteriscos()">Crear</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        const asteriscos = () => {
+            const filas = parseInt(document.getElementById("numero1").value);
+            const columnas = parseInt(document.getElementById("numero2").value);
+            const contenedor = document.getElementById("resultado");
+            
+            let contenido = ""; // Variable para acumular los asteriscos
+
+            for (let f = 1; f <= filas; f++) {
+                for (let c = 1; c <= columnas; c++) {
+                    contenido += "*"; 
+                }
+                contenido += "<br>";
+            }
+
+            contenedor.innerHTML = contenido; // Insertamos todo de golpe
+        }
+    </script>
+</body>
+</html>

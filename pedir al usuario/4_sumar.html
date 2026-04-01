@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        	<input type="text" name="va" id="va"> <br>
+			<input type="text" name="vb" id="vb"> <br>
+			<input type="button" name="bo" id="bo" value="Sumar" onclick="sumar();"> <br>
+    </form>
+
+    	<script>
+			function sumar(){
+				var a = document.getElementById("va").value;
+				var b = document.getElementById("vb").value;
+				console.log(a);
+				console.log(b);
+				var c = parseInt(a)+parseInt(b);
+				console.log(c);
+                document.write("La sumae es: ",c)
+			}
+		</script>
+</body>
+</html>

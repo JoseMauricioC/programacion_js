@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Declaración
+        function saludar(nombre) {
+            return "Hola, " + nombre;
+        }
+
+        // Uso
+        document.write(saludar("Alex"));
+
+        //funcion flecha
+        // Declaración
+        const saludar2 = (nombre) => {
+            return "Hola, " + nombre;
+        };
+        document.write(saludar2("cortis"));
+
+        // Si la función tiene una sola línea, puedes simplificarla aún más (retorno implícito):
+        const saludarCorta = nombre => "Hola, " + nombre;
+
+        console.log(saludarCorta("frances"));
+        document.write(saludarCorta("frances"));
+
+    </script>
+</body>
+
+</html>

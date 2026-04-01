@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 10; let b = 12;
+        if (a > b) {
+            document.write("mayor ", a)
+        } else {
+            document.write("mayor ", b)
+        }
+        document.write("***********************<br>")
+
+        let tieneIngredientes = true;
+
+        if (tieneIngredientes) {
+            console.log("Podemos preparar la pizza.");
+        } else {
+            console.log("Faltan insumos.");
+        }
+        document.write("***********************<br>")
+
+        let nombreCliente = null; // Imagina que el cliente no se ha registrado
+
+        if (nombreCliente) {
+            console.log("Hola, " + nombreCliente);
+        } else {
+            console.log("Hola, invitado."); // Se ejecutará esto porque null es "falso"
+        }
+        document.write("***********************<br>")
+        let stock = null;
+
+        if (stock === null) {
+            console.log("El stock está vacío intencionalmente.");
+        }
+        document.write("***********************<br>")
+        let descuento;
+        if (descuento) {
+            console.log("Aplicar rebaja");
+        } else {
+            console.log("Precio normal");
+        }
+
+    </script>
+</body>
+
+</html>

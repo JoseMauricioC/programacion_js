@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = "juancito"
+        let edad = 23
+        let esEstudiante = true
+
+        document.write(nombre+"<br>")
+        document.write(edad+"<br>")
+        document.write(esEstudiante+"<br>")
+
+        // También se pueden declarar mediante comparaciones
+        let esMayorDeEdad = (18 >= 18); // Resultado: true
+        document.write(esMayorDeEdad+"<br>")
+        
+        // Ejemplo: Si no se encuentra un usuario en una base de datos
+        let usuarioLogueado = null;
+        document.write(usuarioLogueado+"<br>")
+    
+        let tarea; // Se declara, pero no tiene valor asignado
+        console.log(tarea); // Resultado: undefined
+
+        // También puedes asignarlo manualmente (aunque no es lo común)
+        let precio = undefined;
+        document.write(precio+"<br>")
+
+        let pedidoCompletado = false; // El pedido aún no se termina (Booleano)
+        let clienteEspecial = null;    // Aún no sabemos si el cliente tiene membresía (Nulo intencional)
+        let notaAdicional;             // El cliente no ha escrito nada aún (Indefinido por defecto)
+
+    </script>
+</body>
+</html>
