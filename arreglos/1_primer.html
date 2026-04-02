@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frutas = ["manzana", "naranja", "frutilla"]
+
+        document.write(frutas)
+        document.write("<br>")
+        document.write(frutas[1]+"<br>")
+
+        //con for mostrar
+        for(let i=0; i<3; i++){
+            document.write("["+i+"] =>"+frutas[i]+"<br>")
+        }
+
+        //forEach
+        frutas.forEach(item => console.log(item));
+    </script>
+</body>
+</html>

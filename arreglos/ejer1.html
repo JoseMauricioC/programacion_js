@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="numero" placeholder="numero">
+    <button onclick="agregar()">agregar</button>
+    <button onclick="eliminar()">eliminar</button>
+    <button onclick="recuperar()">recuperar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        let lista = [];
+        function agregar() {
+            let elemento = parseInt(document.getElementById("numero").value)
+            //console.log(elemento)
+            contenedor = document.getElementById("resultado")
+
+            lista.push(elemento)
+
+            contenedor.innerHTML = lista.join("<br>")
+            //console.log(lista)
+        }
+
+        //eliminar
+        function eliminar() {
+            contenedor = document.getElementById("resultado")
+
+            eliminado = lista.pop()
+            contenedor.innerHTML = lista.join("<br>")
+
+        }
+
+        //recuperar
+        function recuperar() {
+            contenedor = document.getElementById("resultado")
+
+            lista.push(eliminado)
+
+            contenedor.innerHTML = lista.join("<br>")
+        }
+    </script>
+</body>
+
+</html>
